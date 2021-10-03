@@ -2,7 +2,10 @@
 Door Bell IoT Hardware.
 Made with Kicad.
 
-Used to make my door intercom system a bit more smarter. I have a Siedle HTA 511-01 which I wanted to control from Home Assistant.
+Used to make my door intercom system a bit more smarter. I have a Siedle HT511-01 which I wanted to control from Home Assistant.
+
+![](./doc/mounted_with_housing.jpg)
+![](./doc/inside_housing.jpg)
 
 ## Features
 + Mute bell via relay

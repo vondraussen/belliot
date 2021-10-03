@@ -32,28 +32,12 @@ F 0 "R3" V 3350 3300 50  0000 C CNN
 F 1 "3k9" V 3275 3300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3275 3300 50  0001 C CNN
 F 3 "~" H 3275 3300 50  0001 C CNN
+F 4 "C23018" H 3275 3300 50  0001 C CNN "LCSC"
 	1    3275 3300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 61469A81
-P 3275 3200
-F 0 "R2" V 3200 3200 50  0000 C CNN
-F 1 "3k9" V 3275 3200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3275 3200 50  0001 C CNN
-F 3 "~" H 3275 3200 50  0001 C CNN
-	1    3275 3200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3450 3300 3375 3300
-Wire Wire Line
-	3375 3200 3375 3300
-Connection ~ 3375 3300
-Wire Wire Line
-	3175 3200 3175 3300
-Connection ~ 3175 3300
 $Comp
 L Device:R_Small R4
 U 1 1 6146A835
@@ -62,6 +46,7 @@ F 0 "R4" H 4091 3104 50  0000 R CNN
 F 1 "10k" V 4150 3225 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4150 3150 50  0001 C CNN
 F 3 "~" H 4150 3150 50  0001 C CNN
+F 4 "C25804" H 4150 3150 50  0001 C CNN "LCSC"
 	1    4150 3150
 	-1   0    0    1   
 $EndComp
@@ -131,18 +116,15 @@ F 3 "" H 6375 2600 50  0001 C CNN
 	1    6375 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 3300 4350 3000
-Wire Wire Line
-	4350 3000 6075 3000
 $Comp
 L Relay:G6K-2 K1
 U 1 1 61471700
 P 3750 4550
 F 0 "K1" H 4350 4300 50  0000 R CNN
-F 1 "G6K-2" V 4400 4650 50  0000 R CNN
+F 1 "G6K-2F-Y" V 4400 4650 50  0000 R CNN
 F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y" H 3750 4550 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 3750 4550 50  0001 C CNN
+F 4 "C231389" H 3750 4550 50  0001 C CNN "LCSC"
 	1    3750 4550
 	-1   0    0    -1  
 $EndComp
@@ -173,9 +155,10 @@ L Relay:G6K-2 K2
 U 1 1 6147AAF0
 P 3750 5500
 F 0 "K2" H 4350 5250 50  0000 R CNN
-F 1 "G6K-2" V 4400 5650 50  0000 R CNN
+F 1 "G6K-2F-Y" V 4400 5650 50  0000 R CNN
 F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y" H 3750 5500 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 3750 5500 50  0001 C CNN
+F 4 "C231389" H 3750 5500 50  0001 C CNN "LCSC"
 	1    3750 5500
 	-1   0    0    -1  
 $EndComp
@@ -246,6 +229,8 @@ F 0 "D1" V 4700 4350 50  0000 L CNN
 F 1 "SOD1F1" H 4300 4700 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123F" V 4450 4550 50  0001 C CNN
 F 3 "~" V 4450 4550 50  0001 C CNN
+F 4 "1N4148WS" H 4450 4550 50  0001 C CNN "Alternative"
+F 5 "C2128" H 4450 4550 50  0001 C CNN "LCSC"
 	1    4450 4550
 	0    1    1    0   
 $EndComp
@@ -254,9 +239,11 @@ L Device:D_Small D2
 U 1 1 614851A5
 P 4450 5500
 F 0 "D2" V 4404 5570 50  0000 L CNN
-F 1 "D_Small" V 4495 5570 50  0000 L CNN
+F 1 "SOD1F1" V 4495 5570 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123F" V 4450 5500 50  0001 C CNN
 F 3 "~" V 4450 5500 50  0001 C CNN
+F 4 "1N4148WS" H 4450 5500 50  0001 C CNN "Alternative"
+F 5 "C2128" H 4450 5500 50  0001 C CNN "LCSC"
 	1    4450 5500
 	0    1    1    0   
 $EndComp
@@ -5604,6 +5591,7 @@ F 0 "R1" H 4991 5154 50  0000 R CNN
 F 1 "100k" V 5050 5275 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5050 5200 50  0001 C CNN
 F 3 "~" H 5050 5200 50  0001 C CNN
+F 4 "C25803" H 5050 5200 50  0001 C CNN "LCSC"
 	1    5050 5200
 	-1   0    0    1   
 $EndComp
@@ -5616,6 +5604,7 @@ F 0 "R5" H 5091 6104 50  0000 R CNN
 F 1 "100k" V 5150 6225 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5150 6150 50  0001 C CNN
 F 3 "~" H 5150 6150 50  0001 C CNN
+F 4 "C25803" H 5150 6150 50  0001 C CNN "LCSC"
 	1    5150 6150
 	-1   0    0    1   
 $EndComp
@@ -5642,44 +5631,22 @@ F 3 "" H 5050 5300 50  0001 C CNN
 	1    5050 5300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J1
-U 1 1 6148F8C4
-P 1925 4175
-F 0 "J1" H 2025 4125 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1843 3941 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1925 4175 50  0001 C CNN
-F 3 "~" H 1925 4175 50  0001 C CNN
-	1    1925 4175
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J2
-U 1 1 61490911
-P 1925 4475
-F 0 "J2" H 2025 4425 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 2025 4575 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1925 4475 50  0001 C CNN
-F 3 "~" H 1925 4475 50  0001 C CNN
-	1    1925 4475
-	-1   0    0    1   
-$EndComp
-Text GLabel 2225 4075 2    50   Input ~ 0
+Text GLabel 1650 4200 2    50   Input ~ 0
 7
-Text GLabel 2225 4175 2    50   Input ~ 0
+Text GLabel 1650 4100 2    50   Input ~ 0
 c
 Wire Wire Line
-	2225 4075 2125 4075
+	1650 4200 1550 4200
 Wire Wire Line
-	2225 4175 2125 4175
-Text GLabel 2250 4375 2    50   Input ~ 0
+	1650 4100 1550 4100
+Text GLabel 1650 4400 2    50   Input ~ 0
 I
 Wire Wire Line
-	2250 4375 2125 4375
-Text GLabel 2250 4475 2    50   Input ~ 0
+	1650 4400 1550 4400
+Text GLabel 1650 4300 2    50   Input ~ 0
 LW
 Wire Wire Line
-	2250 4475 2125 4475
+	1650 4300 1550 4300
 $Comp
 L Device:Q_NMOS_GSD Q2
 U 1 1 61495264
@@ -5688,6 +5655,8 @@ F 0 "Q2" H 5005 6096 50  0000 L CNN
 F 1 "IRLML2502" H 5005 6005 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5000 6150 50  0001 C CNN
 F 3 "~" H 4800 6050 50  0001 C CNN
+F 4 "C8545" H 4800 6050 50  0001 C CNN "LCSC"
+F 5 "2N7002" H 4800 6050 50  0001 C CNN "Alternative"
 	1    4800 6050
 	-1   0    0    -1  
 $EndComp
@@ -5699,6 +5668,8 @@ F 0 "Q1" H 5005 5146 50  0000 L CNN
 F 1 "IRLML2502" H 5005 5055 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5000 5200 50  0001 C CNN
 F 3 "~" H 4800 5100 50  0001 C CNN
+F 4 "C8545" H 4800 5100 50  0001 C CNN "LCSC"
+F 5 "2N7002" H 4800 5100 50  0001 C CNN "Alternative"
 	1    4800 5100
 	-1   0    0    -1  
 $EndComp
@@ -5710,6 +5681,7 @@ F 0 "R6" H 4766 2704 50  0000 R CNN
 F 1 "1k" V 4825 2825 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4825 2750 50  0001 C CNN
 F 3 "~" H 4825 2750 50  0001 C CNN
+F 4 "C21190" H 4825 2750 50  0001 C CNN "LCSC"
 	1    4825 2750
 	-1   0    0    1   
 $EndComp
@@ -5717,17 +5689,15 @@ Wire Wire Line
 	6075 3300 4825 3300
 Wire Wire Line
 	4825 3300 4825 3250
-Wire Wire Line
-	6075 3400 5800 3400
 $Comp
 L power:GND #PWR0112
 U 1 1 6148C314
-P 5800 3500
-F 0 "#PWR0112" H 5800 3250 50  0001 C CNN
-F 1 "GND" H 5805 3327 50  0000 C CNN
-F 2 "" H 5800 3500 50  0001 C CNN
-F 3 "" H 5800 3500 50  0001 C CNN
-	1    5800 3500
+P 5775 3700
+F 0 "#PWR0112" H 5775 3450 50  0001 C CNN
+F 1 "GND" H 5780 3527 50  0000 C CNN
+F 2 "" H 5775 3700 50  0001 C CNN
+F 3 "" H 5775 3700 50  0001 C CNN
+	1    5775 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -5736,7 +5706,7 @@ U 1 1 614975C3
 P 4625 3150
 F 0 "J3" H 4650 2975 50  0000 C CNN
 F 1 "LED" H 4550 3100 50  0000 C CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm" H 4625 3150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4625 3150 50  0001 C CNN
 F 3 "~" H 4625 3150 50  0001 C CNN
 	1    4625 3150
 	1    0    0    -1  
@@ -5757,21 +5727,21 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 6149C229
-P 5600 3400
-F 0 "J4" H 5600 3225 50  0000 C CNN
-F 1 "SWITCH" H 5475 3350 50  0000 C CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm" H 5600 3400 50  0001 C CNN
-F 3 "~" H 5600 3400 50  0001 C CNN
-	1    5600 3400
+P 5575 3600
+F 0 "J4" H 5575 3425 50  0000 C CNN
+F 1 "SWITCH" H 5450 3550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5575 3600 50  0001 C CNN
+F 3 "~" H 5575 3600 50  0001 C CNN
+	1    5575 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 614A01B3
 P 6175 6750
-F 0 "H1" H 6275 6796 50  0000 L CNN
+F 0 "H1" H 6275 6796 50  0001 L CNN
 F 1 "MountingHole" H 6275 6705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 6175 6750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 6175 6750 50  0001 C CNN
 F 3 "~" H 6175 6750 50  0001 C CNN
 	1    6175 6750
 	1    0    0    -1  
@@ -5780,9 +5750,9 @@ $Comp
 L Mechanical:MountingHole H2
 U 1 1 614A0222
 P 6175 6925
-F 0 "H2" H 6275 6971 50  0000 L CNN
+F 0 "H2" H 6275 6971 50  0001 L CNN
 F 1 "MountingHole" H 6275 6880 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 6175 6925 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 6175 6925 50  0001 C CNN
 F 3 "~" H 6175 6925 50  0001 C CNN
 	1    6175 6925
 	1    0    0    -1  
@@ -5791,9 +5761,9 @@ $Comp
 L Mechanical:MountingHole H3
 U 1 1 614A0405
 P 6175 7100
-F 0 "H3" H 6275 7146 50  0000 L CNN
+F 0 "H3" H 6275 7146 50  0001 L CNN
 F 1 "MountingHole" H 6275 7055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 6175 7100 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 6175 7100 50  0001 C CNN
 F 3 "~" H 6175 7100 50  0001 C CNN
 	1    6175 7100
 	1    0    0    -1  
@@ -5802,9 +5772,9 @@ $Comp
 L Mechanical:MountingHole H4
 U 1 1 614A0681
 P 6175 7275
-F 0 "H4" H 6275 7321 50  0000 L CNN
+F 0 "H4" H 6275 7321 50  0001 L CNN
 F 1 "MountingHole" H 6275 7230 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 6175 7275 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 6175 7275 50  0001 C CNN
 F 3 "~" H 6175 7275 50  0001 C CNN
 	1    6175 7275
 	1    0    0    -1  
@@ -5813,6 +5783,22 @@ Wire Wire Line
 	3000 3500 3450 3500
 Wire Wire Line
 	3000 3300 3175 3300
-Text Label 5775 3400 0    50   ~ 0
-SWITCH
+Wire Wire Line
+	6075 3500 4350 3500
+Wire Wire Line
+	4350 3500 4350 3300
+Wire Wire Line
+	6075 3600 5775 3600
+$Comp
+L Connector:Screw_Terminal_01x04 J5
+U 1 1 6159AA9A
+P 1350 4200
+F 0 "J5" H 1268 4517 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 1268 4426 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal" H 1350 4200 50  0001 C CNN
+F 3 "~" H 1350 4200 50  0001 C CNN
+F 4 "C173286" H 1350 4200 50  0001 C CNN "LCSC"
+	1    1350 4200
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

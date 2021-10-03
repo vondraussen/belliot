@@ -15,6 +15,9 @@ Used to make my door intercom system a bit more smarter. I have a Siedle HTA 511
 + AC Optocoupler VOS628A-3T
 + 2x Relais G6K-2F-Y
 
+![front](./doc/belliot_front.png)
+![back](./doc/belliot_back.png)
+
 ## Housing
 Todo
 
